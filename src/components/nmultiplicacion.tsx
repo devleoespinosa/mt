@@ -1,7 +1,7 @@
 import React from 'react';
 import TuringMachine from './mt.tsx';
 
-function Multiplicacion() {
+function NMultiplicacion() {
     interface conect {
         to : string,
         read: string,
@@ -14,6 +14,155 @@ function Multiplicacion() {
     }
 
     const states: state[] = [
+            {
+                state: "Q0",
+                conect: [
+                    {
+                        to: "Q0", 
+                        read: "1",
+                        write: "1",
+                        move: "R"
+                    },
+                    {
+                        to: "Q1",
+                        read: " ",
+                        write: "x",
+                        move: "L"
+                    }
+                ]
+            },
+            {
+                state: "Q1",
+                conect: [
+                    {
+                        to: "Q1", 
+                        read: "n",
+                        write: "n",
+                        move: "L"
+                    },
+                    {
+                        to: "Q2",
+                        read: "1",
+                        write: "n",
+                        move: "R"
+                    },
+                    {
+                        to: "Q4",
+                        read: " ",
+                        write: " ",
+                        move: "R"
+                    }
+                ]
+            },
+            {
+                state: "Q2",
+                conect: [
+                    {
+                        to: "Q2", 
+                        read: "n",
+                        write: "n",
+                        move: "R"
+                    },
+                    {
+                        to: "Q2",
+                        read: "1",
+                        write: "1",
+                        move: "R"
+                    },
+                    {
+                        to: "Q2",
+                        read: "x",
+                        write: "x",
+                        move: "R"
+                    },
+                    {
+                        to: "Q3",
+                        read: " ",
+                        write: "1",
+                        move: "L"
+                    }
+                ]
+            },
+            {
+                state: "Q3",
+                conect: [
+                    {
+                        to: "Q3", 
+                        read: "1",
+                        write: "1",
+                        move: "L"
+                    },
+                    {
+                        to: "Q1",
+                        read: "x",
+                        write: "x",
+                        move: "L"
+                    }
+                ]
+            },
+            {
+                state: "Q4",
+                conect: [
+                    {
+                        to: "Q4", 
+                        read: "n",
+                        write: "1",
+                        move: "R"
+                    },
+                    {
+                        to: "Q4",
+                        read: "1",
+                        write: "1",
+                        move: "R"
+                    },
+                    {
+                        to: "Q4",
+                        read: "x",
+                        write: "x",
+                        move: "R"
+                    },
+                    {
+                        to: "Q5",
+                        read: " ",
+                        write: " ",
+                        move: "L"
+                    }
+                ]
+            },
+            {
+                state: "Q5",
+                conect: [
+                    {
+                        to: "Q6", 
+                        read: "1",
+                        write: " ",
+                        move: "L"
+                    }
+                ]
+            },
+            {
+                state: "Q6",
+                conect: [
+                    {
+                        to: "Q6", 
+                        read: "1",
+                        write: "1",
+                        move: "L"
+                    },
+                    {
+                        to: "Q6",
+                        read: "x",
+                        write: "x",
+                        move: "L"
+                    },
+                    {
+                        to: "q0",
+                        read: " ",
+                        write: " ",
+                        move: "R"
+                    } 
+                ]
+            },
             {
                 state: "q0",
                 conect: [
@@ -452,4 +601,4 @@ function Multiplicacion() {
     )
 }
 
-export default Multiplicacion;
+export default NMultiplicacion;

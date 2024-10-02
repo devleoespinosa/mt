@@ -152,7 +152,7 @@ function Division() {
                     to: "q7", 
                     read: "n",
                     write: "n",
-                    move: "L"
+                    move: "R"
                 },
                 {
                     to: "q7", 
