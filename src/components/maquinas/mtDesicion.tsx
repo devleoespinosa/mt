@@ -69,12 +69,6 @@ function TuringMachineDecision({states}: mt) {
                     return 0
                 }
                 var action = stateSelected.conect.filter((x)=> x.readFirstTape === firstTape[index] && x.readSecondTape === secondTape[secondIndex])[0]
-                console.log(stateSelected)
-                console.log(action)
-                console.log(firstTape)
-                console.log(index)
-                console.log(secondTape)
-                console.log(secondIndex)
                 if (action !== undefined) {
                     if (action.moveFirstTape === "R") {
                         var aux = firstTape

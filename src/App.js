@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Resta from './components/resta.tsx';
-import Multiplicacion from './components/multiplicacion.tsx';
-import Division from './components/division.tsx';
-import DivisibleCinco from './components/divisibleCinco.tsx';
-import A2n from './components/a2n.tsx';
-import NMultiplicacion from './components/nmultiplicacion.tsx';
+import Resta from './components/modelos/resta.tsx';
+import Multiplicacion from './components/modelos/multiplicacion.tsx';
+import Division from './components/modelos/division.tsx';
+import DivisibleCinco from './components/modelos/divisibleCinco.tsx';
+import A2n from './components/modelos/a2n.tsx';
+import NMultiplicacion from './components/modelos/nmultiplicacion.tsx';
 
 function App() {
 

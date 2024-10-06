@@ -1,5 +1,5 @@
 import React from 'react';
-import TuringMachine from './mt.tsx';
+import TuringMachine from '../maquinas/mt.tsx';
 
 function Division() {
     interface conect {

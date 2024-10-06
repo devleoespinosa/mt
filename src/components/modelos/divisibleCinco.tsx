@@ -1,5 +1,5 @@
 import React from 'react';
-import TuringMachineDecision from './mtDesicion.tsx';
+import TuringMachineDecision from '../maquinas/mtDesicion.tsx';
 
 function DivisibleCinco() {
     interface conect {
